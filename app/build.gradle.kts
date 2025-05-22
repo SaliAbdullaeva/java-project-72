@@ -5,6 +5,7 @@ plugins {
     application                                              // Плагин для запуска Java-приложений
     id("io.freefair.lombok") version "8.13.1"                // Плагин для автоматического подключения Lombok
     jacoco                                                   // Плагин для генерации отчётов покрытия тестов
+    id("com.github.johnrengelman.shadow") version "8.1.1"   // Чтобы объединить все классы, ресурсы и зависимости проекта в один выходной Jar-архив
 }
 
 application {
@@ -15,7 +16,7 @@ group = "hexlet.code"                                        // Группа (н
 version = "1.0-SNAPSHOT"                                     // Версия проекта (SNAPSHOT — рабочая, не финальная)
 
 repositories {
-    mavenCentral()                                           // Репозиторий для зависимостей (Maven Central)
+    mavenCentral()                                           // Репозиторий для зависимостей
 }
 
 
