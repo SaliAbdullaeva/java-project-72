@@ -1,5 +1,6 @@
 # Используем официальный образ Gradle с JDK 17
-FROM gradle:7.4.0-jdk17 AS build
+FROM gradle:8.2-jdk17 AS build
+
 
 # Копируем всё в контейнер
 COPY ./app /home/gradle/project
