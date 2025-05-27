@@ -29,6 +29,9 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.11.4")) // Управление версиями JUnit 5
     testImplementation("org.junit.jupiter:junit-jupiter")      // JUnit Jupiter для тестов
     implementation("org.projectlombok:lombok:1.18.36")         // Lombok — чтобы писать меньше шаблонного кода
+    implementation("com.h2database:h2:2.3.232")                // Подключаемся к бд H2
+    implementation("com.zaxxer:HikariCP:6.3.0")                // Настройка пула соединений
+
 }
 
 jacoco {
