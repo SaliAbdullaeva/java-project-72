@@ -31,6 +31,8 @@ dependencies {
     implementation("org.projectlombok:lombok:1.18.36")         // Lombok — чтобы писать меньше шаблонного кода
     implementation("com.h2database:h2:2.3.232")                // Подключаемся к бд H2
     implementation("com.zaxxer:HikariCP:6.3.0")                // Настройка пула соединений
+    implementation("org.postgresql:postgresql:42.7.6")         // Драйвер PostgreSQL для подключения к продакшен базе
+
 
 }
 
