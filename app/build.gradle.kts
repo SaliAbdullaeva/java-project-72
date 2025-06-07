@@ -25,13 +25,16 @@ dependencies {
     implementation("org.slf4j:slf4j-simple:2.0.16")            // Логгер SLF4J с простой реализацией
     implementation("org.slf4j:slf4j-api:2.0.16")               // API для логирования SLF4J
     implementation("io.javalin:javalin-rendering:6.4.0")       // Поддержка шаблонов в Javalin
-    implementation("gg.jte:jte:3.1.16")                        // Движок шаблонов JTE
+    implementation("gg.jte:jte:3.2.1")                         // Движок шаблонов JTE
     testImplementation(platform("org.junit:junit-bom:5.11.4")) // Управление версиями JUnit 5
     testImplementation("org.junit.jupiter:junit-jupiter")      // JUnit Jupiter для тестов
     implementation("org.projectlombok:lombok:1.18.36")         // Lombok — чтобы писать меньше шаблонного кода
     implementation("com.h2database:h2:2.3.232")                // Подключаемся к бд H2
     implementation("com.zaxxer:HikariCP:6.3.0")                // Настройка пула соединений
     implementation("org.postgresql:postgresql:42.7.6")         // Драйвер PostgreSQL для подключения к продакшен базе
+    //implementation ("gg.jte:jte-runtime:3.2.1" )              // runtime для шаблонов
+    //implementation ("gg.jte:jte-javalin:3.2.1")               // интеграция с Javalin
+    //annotationProcessor ("gg.jte:jte-compiler:3.2.1")         // компилятор шаблонов (если используешь)
 
 
 }
